@@ -1,0 +1,135 @@
+/*  =====  Farbdefinitionen nach Design‑Guide  ===== */
+:root {
+    --primary-blue: #1a73e8;
+    --text-gray: #202124;
+    --light-gray: #5f6368;
+    --white: #ffffff;
+    --spacing: 1.2rem;
+}
+
+/*  =====  Globale Resets  ===== */
+*,*::before,*::after { box-sizing: border-box; }
+html,body { margin: 0; padding: 0; }
+body {
+    font-family: "Google Sans", "Arial", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-gray);
+    background: var(--white);
+}
+
+/*  =====  Struktur  ===== */
+header {
+    background: var(--white);
+    padding: var(--spacing);
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: calc(var(--spacing) * 2) var(--spacing);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+ul { 
+    padding-left: 1.2rem; 
+    margin: 0.5rem 0; 
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/*  Formularelemente  */
+form { 
+    display: grid; 
+    gap: 1rem; 
+    max-width: 640px; 
+}
+
+label { 
+    font-weight: 500; 
+    color: var(--text-gray); 
+}
+
+input,textarea,select {
+    font-family: inherit;
+    padding: 0.8rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary-blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    width: fit-content;
+}
+
+button:hover { 
+    background: #1557b0; 
+}
+
+footer {
+    text-align: center;
+    padding: var(--spacing);
+    font-size: 0.9rem;
+    color: var(--light-gray);
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-logos {
+    margin-top: 1rem;
+}
+
+.footer-logos img {
+    height: 48px;
+    margin: 0 1rem;
+}
+
+.funding-amount {
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    background: var(--primary-blue);
+    color: var(--white);
+    transition: background 0.2s ease-in-out;
+}
+
+.button:hover {
+    background: #1557b0;
+}
